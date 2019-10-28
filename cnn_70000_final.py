@@ -68,8 +68,8 @@ from keras.layers import Dense, Dropout, Activation, Flatten, BatchNormalization
 X1=np.load('X_new.npy')
 Y1=np.load('Y_new.npy')
 
-X=X1[0:70000]
-Y=Y1[0:70000]
+X=X1[0:40000]
+Y=Y1[0:40000]
 
 def describe_data(x,y):
     print('Total number: {}'.format(len(x)))
@@ -189,7 +189,7 @@ def plot_lc(history):
     plt.legend(['train', 'test'], loc='upper left')
 
 history = model.fit_generator(datagen.flow(X_train_reshape,Y_train_c, batch_size=32),validation_data=(X_test_reshape,Y_test_c),
-                        steps_per_epoch=len(X_train_reshape) / 32, epochs=20 ,callbacks = [MetricsCheckpoint('logs')],verbose=1)
+                        steps_per_epoch=len(X_train_reshape) / 32, epochs=100 ,callbacks = [MetricsCheckpoint('logs')],verbose=1)
 
 score = model.evaluate(X_test_reshape,Y_test_c)
 print(score)
