@@ -49,8 +49,10 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import accuracy_score,confusion_matrix,classification_report
 from sklearn import metrics
 
-x_sub=np.load('X.npy')
-y_sub=np.load('Y.npy')
+x_sub=np.load('X_new.npy')
+y_sub=np.load('Y_new.npy')
+x_sub=x_sub[0:40000]
+y_sub=y_sub[0:40000]
 
 x_sub = np.array(x_sub)
 x_sub_shape = x_sub.shape[1] * x_sub.shape[2] * x_sub.shape[3]
