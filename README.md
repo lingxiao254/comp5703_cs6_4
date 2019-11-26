@@ -13,7 +13,7 @@ The predicted classifications from each model are ploted to compare with actual 
 
 	Data analysis: EDA_new.ipynb
 
-	Modelling, visualization and model evaluation: 
+	Modelling, model evaluation and visualisation: 
 		RF_final.ipynb
 		SVM_final.ipynb
 		cnn_final.ipynb
