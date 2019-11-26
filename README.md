@@ -14,11 +14,12 @@ The predicted classifications from each model are ploted to compare with actual 
 	Data analysis: EDA_new.ipynb
 
 	Modelling, model evaluation and visualisation: 
+		Visualisation_final.ipynb
 		RF_final.ipynb
 		SVM_final.ipynb
 		cnn_final.ipynb
 		ResNet50_final.ipynb
 		merging_model_ipynb.ipynb
-		Visualisation_final.ipynb
+		
 
 	Model comparison: McNemar_ResNet_CNN.ipynb
